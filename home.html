@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            background-image: url(https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+
+            background-attachment: fixed
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            height: 120px;
+            background-color: white;
+            top: 0;
+            display: block;
+            transition: top 0.3s;
+
+        }
+
+        .navbar h2 {
+            text-align: center;
+            font-size: 50px;
+            padding: 0;
+
+            color: rgb(139, 122, 122);
+        }
+
+        span {
+            color: rgba(9, 9, 49, 0.723);
+        }
+
+        .bus {
+            margin-top: 200px
+        }
+
+
+        .card {
+            box-shadow: 10px 10px 30px 15px rgb(94, 84, 84);
+
+            max-width: 600px;
+            margin: 60px 500px;
+            text-align: center;
+            font-family: arial;
+            background-color: rgb(215, 221, 227);
+
+        }
+
+        .name {
+            color: #141e30;
+            font-size: 22px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: rgb(255, 255, 255);
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h2 style="text-align:center">DO<span>TRAVEL</span></h2>
+    </div>
+
+
+    <div class="bus">
+        <div class="card">
+            <img src="bus1.jpg" width="300px" height="200px">
+            <h1>Bus Nmae: Brindhavanam</h1>
+            <p class="name">No.of.seats : 75</p>
+            <p>Driver name : Rahul</p>
+            <a href="mains.html"><button type="submit" value="Submit">Book Now</button></a>
+        </div>
+        <div class="card">
+            <img src="bus2.jpg" width="300px" height="200px">
+
+            <h1>Bus Name: Shivam</h1>
+            <p class="name">No.of.seats : 60</p>
+            <p>Driver name : Ram</p>
+            <a href="mains.html"><button type="submit" value="Submit">Book Now</button></a>
+        </div>
+        <div class="card">
+            <img src="bus3.jpg" width="300px" height="200px">
+            <h1>Bus Name: SRT Travels</h1>
+            <p class="name">No.of.seats : 55</p>
+            <p>Driver name : Saran</p>
+            <a href="mains.html"><button type="submit" value="Submit">Book Now</button></a>
+        </div>
+        <div class="card">
+            <img src="bus4.jpg" width="300px" height="200px">
+            <h1>Bus Name:Jayam</h1>
+            <p class="name">No.of.seats : 50</p>
+            <p>Driver name : Rahim</p>
+            <a href="mains.html"><button type="submit" value="Submit">Book Now</button></a>
+        </div>
+        <div class="card">
+            <img src="bus5.jpg" width="300px" height="200px">
+            <h1>Bus Name:NPS Travels</h1>
+            <p class="name">No.of.seats : 65</p>
+            <p>Driver name : Anwar</p>
+            <a href="mains.html"><button type="submit" value="Submit">Book Now</button></a>
+        </div>
+    </div>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+</body>
+
+</html>

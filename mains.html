@@ -1,0 +1,159 @@
+<html>
+
+<head>
+  <title>DOTRAVEL</title>
+  <style>
+    body {
+      background-image: url("https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    td {
+      color: aliceblue;
+
+    }
+
+    h1 {
+      color: rgb(102, 112, 121);
+      font-family: 'Gill Sans';
+      font-size: 30px;
+    }
+
+    input {
+      border-radius: 20px;
+      background: transparent;
+      color: antiquewhite;
+
+    }
+
+    span {
+      color: rgb(182, 182, 193);
+    }
+
+    textarea {
+      background: transparent;
+    }
+
+    button {
+      outline: none;
+      font-size: 20px;
+      border-radius: 20px;
+      background-color: rgb(255, 255, 255);
+      background: transparent;
+      color: aliceblue;
+      border: 1px solid white;
+      padding: 10px;
+      margin-right: 50px;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1 style="text-align: center;">DO<span>TRAVEL</span></h1>
+
+  <form action="details.php" method="post">
+    <table align="center" cellpadding="10">
+
+      <!----- Starting Point ---------------------------------------------------------->
+      <tr>
+        <td>Starting point:</td>
+        <td><input type="text" name="Starting_Point" maxlength="30" required="" />
+          (max 30 characters a-z and A-Z)
+        </td>
+      </tr>
+
+      <!----- Ending Point ---------------------------------------------------------->
+      <tr>
+        <td>Ending point:</td>
+        <td><input type="text" name="Ending_Point" maxlength="30" required="" />
+          (max 30 characters a-z and A-Z)
+        </td>
+      </tr>
+
+      <!----- Departure Date  -------------------------------------------------------->
+      <tr>
+        <td>Departure Date</td>
+
+        <td><input type="date" id="Departure_date" name="Departure_Date" required=""></td>
+
+      </tr>
+      <!----- Return Date -------------------------------------------------------->
+      <tr>
+        <td>Return Date</td>
+        <td><input type="date" id="Return_date" name="Return_Date" required=""></td>
+
+      </tr>
+
+      <!----- Email Id ---------------------------------------------------------->
+      <tr>
+        <td>EMAIL ID</td>
+        <td><input type="text" name="Email" maxlength="100" required="" /></td>
+      </tr>
+
+      <!----- Mobile Number ---------------------------------------------------------->
+      <tr>
+        <td>MOBILE NUMBER</td>
+        <td>
+          <input type="text" name="Mobile_Number" maxlength="10" required="" />
+          (10 digit number)
+        </td>
+      </tr>
+
+
+
+      <!----- Address ---------------------------------------------------------->
+      <tr>
+        <td>ADDRESS <br /><br /><br /></td>
+        <td><textarea name="Address" rows="2" cols="15" required=""></textarea></td>
+      </tr>
+
+      <!----- City ---------------------------------------------------------->
+      <tr>
+        <td>CITY</td>
+        <td><input type="text" name="City" maxlength="30" required="" />
+          (max 30 characters a-z and A-Z)
+        </td>
+      </tr>
+
+      <!----- Pin Code ---------------------------------------------------------->
+      <tr>
+        <td>PIN CODE</td>
+        <td><input type="text" name="Pin_Code" maxlength="6" required="" />
+          (6 digit number)
+        </td>
+      </tr>
+
+      <!----- State ---------------------------------------------------------->
+      <tr>
+        <td>STATE</td>
+        <td><input type="text" name="State" maxlength="30" required="" />
+          (max 30 characters a-z and A-Z)
+        </td>
+      </tr>
+
+      <!----- Country ---------------------------------------------------------->
+      <tr>
+        <td>COUNTRY</td>
+        <td><input type="text" value="India" name="Country" required=""></td>
+      </tr>
+
+
+
+      <!----- Book Now ------------------------------------------------->
+      <tr>
+        <td colspan="2" align="center">
+          <a href="last.html"><button type="submit">submit</button></a>
+
+        </td>
+      </tr>
+    </table>
+
+  </form>
+
+</body>
+
+</html>
